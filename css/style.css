@@ -4,6 +4,9 @@
     height: 40px;
     color: #F9E7E7;  
 }
+.body{
+    padding-top: 80px;
+}
 .logo-h{
     font-size: 25px;
 }
@@ -95,6 +98,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.nav-a {
+    position: relative;
+    text-decoration: none;
+    transition: all 0.5s linear;
+    margin-bottom: 10px;
+    color: #F9E7E7; ;
+}
+.nav-a::after {
+    content: ' ';
+    position: absolute;
+    left:0;
+    bottom:0;
+    height: 3px;
+    width:0%;
+    background-color: white;
+    transition: all 0.5s linear;
+}
+
+a:hover::after {
+    width: 85%;
 }
 
 /* footer */
@@ -241,7 +265,9 @@
     font-size: 30px;
     font-weight: 900;
     margin-top: 30px;
+  
 }
+
 .text{
     position: absolute;
     font-family: 'ALK Life';
