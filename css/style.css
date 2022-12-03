@@ -120,14 +120,38 @@
 a:hover::after {
     width: 85%;
 }
+/* .search-form{
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+}
+.search{
+    display: none;
+    color: white
+}
+.search.input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+} */
+
+
 
 /* footer */
 .footer{
     max-width: 1920px;
     background-color:#F9E7E7;
-    bottom:0 px;
-    
-}
+    bottom:0px;
+    margin-top: 20px;
+    }
 .logo-div1{
     font-size: 20px;
     font-family: 'ALK Life';
@@ -157,7 +181,6 @@ a:hover::after {
     font-weight: 600;
     font-size: 25px;
     padding-left: 0px;
-
 }
 .contact-icon{
     color: white;
@@ -191,18 +214,25 @@ a:hover::after {
 .slider-section{
     margin-top: 85px;
     margin-bottom: 30px;
+    
+}
+.slider-wrapper{
+    margin: 0 220px;
 }
 .slide h3{
     position: absolute;
-    top: 80%;
-    left: 20%;
+    top: 30%;
+    left: 70%;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'ALK Life';
+    color: white;
+
 }
 .arrow {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    color: blue;
-    font-size: 30px;
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -214,8 +244,16 @@ a:hover::after {
 .arrow-right {
     right: 30px;
 }
+.fa-arrow-right{
+    color: brown;
+    font-size: 30px;
+}
 .arrow-left {
     left: 30px;
+}
+.fa-arrow-left{
+    color: brown;
+    font-size: 30px;
 }
 
 .dotParent {
@@ -239,7 +277,7 @@ a:hover::after {
 }
 .img-slider {
     width: 100%;
-    height: 500px;
+    height: 800px;
     object-fit:cover;
 }
 
@@ -254,7 +292,7 @@ a:hover::after {
     position: relative;
     padding-left: 100px;
     padding-right: 100px;
-    height: 100%;
+    /* height: 100%; */
 }
 .about-us-img{
     height: 500px;
@@ -265,9 +303,7 @@ a:hover::after {
     font-size: 30px;
     font-weight: 900;
     margin-top: 30px;
-  
 }
-
 .text{
     position: absolute;
     font-family: 'ALK Life';
@@ -306,3 +342,74 @@ a:hover::after {
     padding-right: 120px;
     padding-top: 80px;
 }
+
+/* registration form */
+
+.registration-form{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+/* .form{
+    margin-left: 100px;
+} */
+.form-heading{
+    color: #D9A496; ;
+    font-size: 30px;
+    font-family: 'ALK Life';
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.img-div{
+    /* margin-right: 50px; */
+    margin-top: 20px;
+}
+.image{
+    max-width: 600px;
+    height: 500px;
+}
+.input {
+    max-width: 600px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border-color: #D9A496;
+    color: #F9E7E7;
+    font-size: 18px;
+    font-family: 'ALK Life';
+
+}
+.input:focus {
+    outline: none;
+}
+.input-check{
+    font-size: 15px;
+    font-family: 'ALK Life';
+    color: #D9A496;
+}
+.send-button {
+    max-width: 600px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #D9A496;
+    font-size: 20px;
+    color: white;
+    font-family: 'ALK Life';
+    font-weight: bold;
+    transition: 0.5s linear;
+}
+.error-text {
+    color: red;
+    font-family: 'ALK Life';
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* gallery section */

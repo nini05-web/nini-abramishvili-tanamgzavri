@@ -14,25 +14,22 @@ let data = [
   {
     id: 1,
     imageUrl: "images/s.jpg",
-    title: "slider title 1",
+    title: "ატარე შენი თანამგზავრი",
   },
   {
     id: 2,
-    imageUrl:
-      "https://images.unsplash.com/photo-1528465424850-54d22f092f9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBwaG90b3xlbnwwfHwwfHw%3D&w=1000&q=80",
-    title: "slider title 2",
+    imageUrl: "images/slide.jpg",
+    title: "მზადდება  სიყვარულით",
   },
   {
     id: 3,
-    imageUrl:
-      "https://images.pexels.com/photos/268941/pexels-photo-268941.jpeg?cs=srgb&dl=pexels-pixabay-268941.jpg&fm=jpg",
-    title: "slider title 3",
+    imageUrl: "images/sl.jpg",
+    title: "ატარე ქართული",
   },
   {
     id: 4,
-    imageUrl:
-      "https://images.unsplash.com/photo-1528465424850-54d22f092f9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBwaG90b3xlbnwwfHwwfHw%3D&w=1000&q=80",
-    title: "slider title 4",
+    imageUrl: "images/slider.jpg",
+    title: "შეუკვეთეთ ჩვენი ხელით ნაქსოვი სამოსი და გახადეთ ის თქვენი მუდმივი თანამგზავრი",
   },
 ];
 
@@ -163,4 +160,73 @@ function smoothScroll(e) {
         behavior: "smooth"
     });
 }
+
+// search form
+// let searchForm=document.getElementById("search-form");
+// let input=document.getElementById("search-box")
+
+// searchForm.addEventListener("click", function () {
+//     searchForm.classList.toggle("activeForm");
+//     input.classList.toggle("input");
+
+//   });
+
+//form validation
+let registrationForm = document.getElementById("resgitrationForm");
+
+registrationForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  let errors = {};
+
+  //username
+  let usernameValue = document.getElementById("usernameField").value;
+  if (usernameValue == "") {
+    errors.username =
+      "მომხმარებლის სახელის ფანჯარა არ უნდა იყოს ცარიელი";
+  }
+
+  //password
+  let passwordValue = document.getElementById("passwordField").value;
+  let passwordValue2 = document.getElementById("passwordFieldRepeat").value;
+
+  if (passwordValue == "") {
+    errors.password = "პაროლის ველი არ უნდა იყოს ცარიელი";
+  }
+  if (passwordValue != passwordValue2) {
+    errors.password2 = "პაროლი არ ემთხვევა";
+  }
+
+  //checkbox
+  let agreeField = document.getElementById("agreeTerms").checked;
+
+  if (!agreeField) {
+    errors.agree = "უნდა დაეთანხმო წესებს და პირობებს";
+  }
+
+  console.log(errors);
+
+  document.querySelectorAll(".error-text").forEach((item) => {
+    item.innerText = " ";
+  });
+
+  for (let key in errors) {
+    let spanText = document.getElementById("error_" + key);
+
+    if (spanText) {
+      spanText.innerText = errors[key];
+    }
+  }
+
+  if (Object.keys(errors).length == 0) {
+    registrationForm.submit();
+  }
+});
+
+
+
+
+// gallery section
+
+
+
 
