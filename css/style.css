@@ -412,4 +412,56 @@ a:hover::after {
     margin-bottom: 20px;
 }
 
+/* our customer section */
+#ul-list{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 15px;
+    font-family: 'ALK Life';
+    font-weight: 600;
+}
+.our-customer-div{
+    max-width: 1600px;
+    background-color: #F9E7E7;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px 80px 20px 250px;
+
+}
+.image-block{
+    max-width: 200px;
+    height: 150px;
+    margin-right: 120px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+#loadPrev{
+    margin-top: 20px;
+    border: none;
+    font-size: 25px;
+    color: #BA7280;
+    font-family: 'ALK Life';
+    transition: all 0.3s linear;
+}
+#loadPrev:hover{
+    background-color: #D9A496;
+    width: 150px;
+}
+#loadNext{
+    margin-top: 20px;
+    border: none;
+    font-size: 25px;
+    color: #BA7280;
+    font-family: 'ALK Life';
+    margin-left: 480px;
+    transition: all 0.3s linear;
+}
+#loadNext:hover{
+    background-color: #D9A496;
+    width: 150px;
+}
+
+
 /* gallery section */

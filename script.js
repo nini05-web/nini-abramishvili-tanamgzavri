@@ -1,3 +1,5 @@
+"use strict"
+
 // burger bar
 let navigation=document.getElementById("nav-bar");
 let burgerBar=document.getElementById("burger-Bar");
@@ -101,7 +103,7 @@ function slide() {
   slideItem.appendChild(titleTag);
   sliderCOntent.appendChild(slideItem);
   sliderCOntent.appendChild(dotsElement);
-  DivTag.appendChild(tagTitle);
+  slideItem.appendChild(titleTag);
 
   dotItem[sliderIndex].classList.add("activeDot");
 }
@@ -135,32 +137,6 @@ arrowRight.addEventListener("click", arrowRightClick);
 
 slide();
 
-// Put all links in a variable
-const links = document.querySelectorAll('.js-scroll');
-
-// Add event listener to all links
-links.forEach(function (elem) {
-    elem.addEventListener('click', smoothScroll)
-});
-
-// Magic function to scroll smooth!
-function smoothScroll(e) {
-    // Prevent default anchor behaviour
-    e.preventDefault();
-
-    // Get clicked links href attribute
-    const link = this.getAttribute("href");
-
-    // Get the targets position
-    const offsetTop = document.querySelector(link).offsetTop;
-
-    // Finally scroll to target
-    scroll({
-        top: offsetTop,
-        behavior: "smooth"
-    });
-}
-
 // search form
 // let searchForm=document.getElementById("search-form");
 // let input=document.getElementById("search-box")
@@ -172,7 +148,7 @@ function smoothScroll(e) {
 //   });
 
 //form validation
-let registrationForm = document.getElementById("resgitrationForm");
+let registrationForm = document.getElementById("registrationForm");
 
 registrationForm.addEventListener("submit", function (event) {
   event.preventDefault();
