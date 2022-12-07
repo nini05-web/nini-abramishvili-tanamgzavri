@@ -156,16 +156,15 @@ registrationForm.addEventListener("submit", function (event) {
 
   //username
   let usernameValue = document.getElementById("usernameField").value;
-  if (usernameValue == "") {
-    errors.username =
-      "მომხმარებლის სახელის ფანჯარა არ უნდა იყოს ცარიელი";
+  if (usernameValue == " ") {
+    errors.username = "მომხმარებლის სახელის ფანჯარა არ უნდა იყოს ცარიელი";
   }
 
   //password
   let passwordValue = document.getElementById("passwordField").value;
   let passwordValue2 = document.getElementById("passwordFieldRepeat").value;
 
-  if (passwordValue == "") {
+  if (passwordValue == " ") {
     errors.password = "პაროლის ველი არ უნდა იყოს ცარიელი";
   }
   if (passwordValue != passwordValue2) {
@@ -198,10 +197,22 @@ registrationForm.addEventListener("submit", function (event) {
   }
 });
 
+function emailValidation() {
+  let emailFiled = document.getElementById('userEmail').value;
+  let spanText = document.getElementById('errors_yourEmail');
+  let emailStructure = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ 
+
+  if (emailFiled.match(emailStructure)) {
+      spanText.innerHTML ='Your Email is valid';
+      spanText.style.color = 'green';
+  } else {
+      spanText.innerHTML = 'Your Email is invalid';
+      spanText.style.color = 'red'
+  }
+}
 
 
 
-// gallery section
 
 
 

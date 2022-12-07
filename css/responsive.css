@@ -32,6 +32,14 @@
     padding-right: 80px;
     margin-left: 10px;
     }
+    .our-customers{
+        margin-bottom: 80px;
+        margin-top: 20px;
+    }
+    #ul-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }   
 @media(max-width:840px){
     .navigation{

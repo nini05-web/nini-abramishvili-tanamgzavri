@@ -5,7 +5,7 @@
     color: #F9E7E7;  
 }
 .body{
-    padding-top: 80px;
+    margin-top:  180px;
 }
 .logo-h{
     font-size: 25px;
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 20px 0px 80px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     position: fixed;
     top:0; left: 0; right: 0;
     z-index: 1000;
@@ -148,7 +148,7 @@ a:hover::after {
 /* footer */
 .footer{
     max-width: 1920px;
-    background-color:#F9E7E7;
+    background-color:#E7D3DD;
     bottom:0px;
     margin-top: 20px;
     }
@@ -209,6 +209,9 @@ a:hover::after {
     font-size: 35px;
     margin-right: 30px;
 }
+.icons{
+    color: white;
+}
 
 /* slider section */
 .slider-section{
@@ -227,7 +230,12 @@ a:hover::after {
     font-weight: 800;
     font-family: 'ALK Life';
     color: white;
+    cursor: pointer;
+    transition: all 0.3s linear;
 
+}
+.slide h3:hover{
+    color:#BA7280;
 }
 .arrow {
     width: 40px;
@@ -245,14 +253,14 @@ a:hover::after {
     right: 30px;
 }
 .fa-arrow-right{
-    color: brown;
+    color:#BA7280;
     font-size: 30px;
 }
 .arrow-left {
     left: 30px;
 }
 .fa-arrow-left{
-    color: brown;
+    color:#BA7280;
     font-size: 30px;
 }
 
@@ -273,7 +281,7 @@ a:hover::after {
 
 }
 .activeDot {
-    border:2px solid red;
+    border:2px solid #BA7280 ;
 }
 .img-slider {
     width: 100%;
@@ -303,7 +311,13 @@ a:hover::after {
     font-size: 30px;
     font-weight: 900;
     margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.3s linear;
 }
+.h2:hover{
+ color: #D9A496;
+}
+
 .text{
     position: absolute;
     font-family: 'ALK Life';
@@ -314,33 +328,56 @@ a:hover::after {
     height: 500px;
     top: 60%;
     left: 80%;
+    transition: all 0.3s linear;
+    cursor: pointer;
 
+}
+.text:hover{
+    color:#D9A496;
 }
 
 
 /* contact section */
 .contact-section{
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
 }
 .map{
     max-width: 600px;
     width: 100%;
-    margin: 60px auto;
-    padding: 10px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius:  70% 70% 30% / 30% 30% 70% 70% ;
     
 }
+.list1{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'ALK Life';
+    color: black;
+}
 .contact-section-div{
-    background-color: #D9A496;
+    /* background-color: #D9A496; */
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1600px;
     width: 100%;
+    height: 100%;
 }
 .contact-div{
     padding-right: 120px;
-    padding-top: 80px;
+    padding-top: 100px;
+}
+.contact-h{
+    color: #BA7280;
+}
+.contact-a1{
+    color: #BA7280;
+    font-weight: 800;
+}
+.contact-icon1{
+    color: #BA7280;
 }
 
 /* registration form */
@@ -348,7 +385,7 @@ a:hover::after {
 .registration-form{
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 100px auto;
     max-width: 1100px;
     width: 100%;
 }
@@ -361,6 +398,10 @@ a:hover::after {
     font-family: 'ALK Life';
     margin-top: 20px;
     margin-bottom: 30px;
+    cursor: pointer;
+}
+.form-heading:hover{
+    color:chocolate;
 }
 .img-div{
     /* margin-right: 50px; */
@@ -381,15 +422,21 @@ a:hover::after {
     color: #F9E7E7;
     font-size: 18px;
     font-family: 'ALK Life';
+    cursor: pointer;
+    transition: all 0.2s linear;
 
 }
 .input:focus {
     outline: none;
 }
+.input:hover{
+    height: 60px;
+}
 .input-check{
     font-size: 15px;
     font-family: 'ALK Life';
     color: #D9A496;
+    cursor: pointer;
 }
 .send-button {
     max-width: 600px;
@@ -404,6 +451,11 @@ a:hover::after {
     font-family: 'ALK Life';
     font-weight: bold;
     transition: 0.5s linear;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.send-button:hover{
+    height: 60px;
 }
 .error-text {
     color: red;
@@ -416,17 +468,21 @@ a:hover::after {
 #ul-list{
     display: flex;
     flex-wrap: wrap;
-    color: white;
+    color:#E7D3DD;
     font-size: 15px;
     font-family: 'ALK Life';
     font-weight: 600;
 }
+.our-customers{
+    margin-top: 80px;
+}
 .our-customer-div{
     max-width: 1600px;
-    background-color: #F9E7E7;
     height: 500px;
     margin: 0 auto;
     padding: 20px 80px 20px 250px;
+    /* display: flex;
+    flex-wrap: wrap; */
 
 }
 .image-block{
