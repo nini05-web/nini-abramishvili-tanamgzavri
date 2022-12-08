@@ -4,9 +4,9 @@
     height: 40px;
     color: #F9E7E7;  
 }
-.body{
+/* .body{
     margin-top:  180px;
-}
+} */
 .logo-h{
     font-size: 25px;
 }
@@ -298,19 +298,21 @@ a:hover::after {
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding-left: 100px;
-    padding-right: 100px;
-    /* height: 100%; */
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 80px;
 }
 .about-us-img{
-    height: 500px;
+    height: 440px;
+    margin-top: 50px;
 }
 .h2{
     color:brown;
     font-family: 'ALK Life';
     font-size: 30px;
     font-weight: 900;
-    margin-top: 30px;
+    margin-top: 55px;
+    margin-left: 20px;
     cursor: pointer;
     transition: all 0.3s linear;
 }
@@ -338,17 +340,11 @@ a:hover::after {
 
 
 /* contact section */
-.contact-section{
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
 .map{
     max-width: 600px;
     width: 100%;
-    margin: 40px auto;
-    padding: 20px;
-    border-radius:  70% 70% 30% / 30% 30% 70% 70% ;
-    
+    padding-top: 100px;
+    padding-left: 50px;
 }
 .list1{
     font-size: 20px;
@@ -362,15 +358,18 @@ a:hover::after {
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1600px;
+    padding-bottom: 60px;
     width: 100%;
     height: 100%;
 }
 .contact-div{
-    padding-right: 120px;
-    padding-top: 100px;
+    padding-right: 20px;
+    padding-top: 200px;
+    margin-left:50px;
 }
 .contact-h{
     color: #BA7280;
+    padding-left: 20px;
 }
 .contact-a1{
     color: #BA7280;
@@ -379,24 +378,27 @@ a:hover::after {
 .contact-icon1{
     color: #BA7280;
 }
+.footer-social-icons1{
+    margin-top: 100px;
+    color: #BA7280;
+    font-size: 20px;
+}
 
 /* registration form */
 
 .registration-form{
     display: flex;
     justify-content: space-between;
-    margin: 100px auto;
+    margin: 0 auto;
     max-width: 1100px;
     width: 100%;
 }
-/* .form{
-    margin-left: 100px;
-} */
 .form-heading{
     color: #D9A496; ;
     font-size: 30px;
+    font-weight: 600;
     font-family: 'ALK Life';
-    margin-top: 20px;
+    margin-top: 80px;
     margin-bottom: 30px;
     cursor: pointer;
 }
@@ -404,11 +406,11 @@ a:hover::after {
     color:chocolate;
 }
 .img-div{
-    /* margin-right: 50px; */
-    margin-top: 20px;
+    margin-top: 80px;
 }
 .image{
     max-width: 600px;
+    width: 100%;
     height: 500px;
 }
 .input {
@@ -474,23 +476,21 @@ a:hover::after {
     font-weight: 600;
 }
 .our-customers{
-    margin-top: 80px;
+    margin-top: 280px;
 }
 .our-customer-div{
     max-width: 1600px;
-    height: 500px;
-    margin: 0 auto;
-    padding: 20px 80px 20px 250px;
-    /* display: flex;
-    flex-wrap: wrap; */
-
+    height: 100%;
+    padding: 0 80px 0 250px;
+    margin-bottom: 50px;
 }
 .image-block{
     max-width: 200px;
     height: 150px;
+    padding-top: 20px;
     margin-right: 120px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-top: 80px;
     
 }
 #loadPrev{
@@ -520,4 +520,73 @@ a:hover::after {
 }
 
 
+
 /* gallery section */
+.slider{
+    width:100%;
+    height:600px;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.slide-ana{
+    height: 100%;
+}
+.slide-ana div{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    transition: all 1s;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.slider span{
+    height: 50px;
+    position: absolute;
+    top:50%;
+    margin:-25px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color:#fff;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    border-radius: 50px;
+}
+.slider span:hover{
+    background-color: #E7D3DD;
+}
+.title{
+    top:80% !important;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 20px;
+    transition: all 0.2s linear;
+}
+.slide-ana{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+#prev{
+    left:0;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s linear;
+}
+#next{
+    right:0;
+    border-radius:10px 0 0 10px;
+    transition: all 0.3s linear;
+}
+#prev svg,#next svg{
+    width:100%;
+    fill: #fff;
+}
+#prev:hover,
+#next:hover{
+    background-color:#E7D3DD;
+}
