@@ -57,6 +57,7 @@
     right: 50%;
     transform: translate(-50%, -50%);
     display: none;
+    cursor: pointer;
 }
 .line {
     width: 80%;
@@ -497,10 +498,11 @@ a:hover::after {
     color: #BA7280;
     font-family: 'ALK Life';
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 #loadPrev:hover{
     background-color: #D9A496;
-    width: 150px;
+    /* width: 150px; */
 }
 #loadNext{
     margin-top: 20px;
@@ -510,11 +512,12 @@ a:hover::after {
     font-family: 'ALK Life';
     margin-left: 480px;
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 #loadNext:hover{
     background-color: #D9A496;
-    width: 150px;
-}
+    /* width: 150px;
+} */
 
 
 
