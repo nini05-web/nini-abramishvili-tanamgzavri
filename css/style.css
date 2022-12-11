@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* header */
 .logo{
     width: 40px;
@@ -16,8 +23,12 @@
 .header-wrapper{
     max-width: 1600px;
     height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 10px 20px 0px 80px;
     margin-bottom: 120px;
     position: fixed;
@@ -30,8 +41,12 @@
 }
 
 .ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 20px;
 }
 .nav-li{
@@ -55,7 +70,9 @@
     height: 60px;
     top: 50%;
     right: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     display: none;
     cursor: pointer;
 }
@@ -66,7 +83,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 .line1 {
@@ -77,11 +98,15 @@
 }
 .activeBar .line1 {
     top:50%;
-    transform: translate(-50%,-50%) rotate(45deg);
+    -webkit-transform: translate(-50%,-50%) rotate(45deg);
+        -ms-transform: translate(-50%,-50%) rotate(45deg);
+            transform: translate(-50%,-50%) rotate(45deg);
 }
 .activeBar .line3{
     top: 50%;
-    transform: translate(-50%,-50%) rotate(-45deg);
+    -webkit-transform: translate(-50%,-50%) rotate(-45deg);
+        -ms-transform: translate(-50%,-50%) rotate(-45deg);
+            transform: translate(-50%,-50%) rotate(-45deg);
 }
 .activeBar .line2{
    display: none;
@@ -93,13 +118,21 @@
     width:100%;
     height: 200px;
     background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .nav-a {
     position: relative;
     text-decoration: none;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
     margin-bottom: 10px;
     color: #F9E7E7; ;
@@ -112,6 +145,8 @@
     height: 3px;
     width:0%;
     background-color: white;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
 }
 
@@ -145,8 +180,12 @@ a:hover::after {
     margin-bottom: 10px;
 }
 .footer-bg{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 40px;
 }
 .h3{
@@ -188,6 +227,10 @@ a:hover::after {
 .icons{
     color: white;
 }
+.f{
+    color: white;
+
+}
 
 /* slider section */
 .slider-section{
@@ -208,6 +251,8 @@ a:hover::after {
     font-family: 'ALK Life';
     color: white;
     cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 
 }
@@ -221,7 +266,9 @@ a:hover::after {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 .slider-wrapper {
     position: relative;
@@ -242,10 +289,14 @@ a:hover::after {
 }
 
 .dotParent {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     left:50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     bottom: 30px;
 }
 .dot {
@@ -263,7 +314,8 @@ a:hover::after {
 .img-slider {
     width: 100%;
     height: 800px;
-    object-fit:cover;
+    -o-object-fit:cover;
+       object-fit:cover;
 }
 
 /* about us */
@@ -272,8 +324,12 @@ a:hover::after {
     margin-bottom: 100px;
 }
 .about-us-div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: relative;
     padding-left: 30px;
     padding-right: 30px;
@@ -291,6 +347,8 @@ a:hover::after {
     margin-top: 55px;
     margin-left: 20px;
     cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 .h2:hover{
@@ -307,6 +365,8 @@ a:hover::after {
     height: 500px;
     top: 60%;
     left: 80%;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     cursor: pointer;
 
@@ -331,8 +391,12 @@ a:hover::after {
 }
 .contact-section-div{
     /* background-color: #D9A496; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 auto;
     max-width: 1600px;
     padding-bottom: 60px;
@@ -364,8 +428,12 @@ a:hover::after {
 /* registration form */
 
 .registration-form{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 auto;
     max-width: 1100px;
     width: 100%;
@@ -402,14 +470,17 @@ a:hover::after {
     font-size: 18px;
     font-family: 'ALK Life';
     cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
 
 }
 .input:focus {
     outline: none;
+    cursor: pointer;
 }
 .input:hover{
-    height: 60px;
+    border:2px solid #7b162a;
 }
 .input-check{
     font-size: 15px;
@@ -429,8 +500,12 @@ a:hover::after {
     color: white;
     font-family: 'ALK Life';
     font-weight: bold;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
     transition: 0.5s linear;
     cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
 .send-button:hover{
@@ -445,8 +520,11 @@ a:hover::after {
 
 /* our customer section */
 #ul-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     color:#E7D3DD;
     font-size: 15px;
     font-family: 'ALK Life';
@@ -476,6 +554,8 @@ a:hover::after {
     font-size: 25px;
     color: #BA7280;
     font-family: 'ALK Life';
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     cursor: pointer;
 }
@@ -490,6 +570,8 @@ a:hover::after {
     color: #BA7280;
     font-family: 'ALK Life';
     /* margin-left: 480px; */
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     cursor: pointer;
 }
@@ -515,6 +597,8 @@ a:hover::after {
     width:100%;
     height: 500px;
     position: absolute;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
     background-size: cover;
     background-position: center center;
@@ -531,6 +615,8 @@ a:hover::after {
     line-height: 50px;
     text-align: center;
     cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
     /* border-radius: 20px; */
 }
@@ -545,6 +631,8 @@ a:hover::after {
     cursor: pointer;
     padding: 0 20px;
     right: 2%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
 .slide-ana{
@@ -556,11 +644,15 @@ a:hover::after {
 #prev{
     left:0;
     border-radius: 0 5px 5px 0;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 #next{
     right:0;
     border-radius:5px 0 0 5px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 /* #prev svg,#next svg{
