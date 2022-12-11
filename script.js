@@ -137,15 +137,6 @@ arrowRight.addEventListener("click", arrowRightClick);
 
 slide();
 
-// search form
-// let searchForm=document.getElementById("search-form");
-// let input=document.getElementById("search-box")
-
-// searchForm.addEventListener("click", function () {
-//     searchForm.classList.toggle("activeForm");
-//     input.classList.toggle("input");
-
-//   });
 
 //form validation
 let registrationForm = document.getElementById("registrationForm");
