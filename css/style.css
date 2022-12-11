@@ -118,28 +118,6 @@
 a:hover::after {
     width: 85%;
 }
-/* .search-form{
-    margin-top: 20px;
-    margin-right: 20px;
-    width: 20px;
-    height: 20px;
-}
-.search{
-    display: none;
-    color: white
-}
-.search.input{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100%;
-    height: 200px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: block;
-} */
 
 
 
@@ -480,7 +458,7 @@ a:hover::after {
 .our-customer-div{
     max-width: 1600px;
     height: 100%;
-    padding: 0 80px 0 250px;
+    padding: 0 80px 0 100px;
     margin-bottom: 50px;
 }
 .image-block{
@@ -511,7 +489,7 @@ a:hover::after {
     font-size: 25px;
     color: #BA7280;
     font-family: 'ALK Life';
-    margin-left: 480px;
+    /* margin-left: 480px; */
     transition: all 0.3s linear;
     cursor: pointer;
 }
@@ -577,18 +555,18 @@ a:hover::after {
 }
 #prev{
     left:0;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 5px 5px 0;
     transition: all 0.3s linear;
 }
 #next{
     right:0;
-    border-radius:10px 0 0 10px;
+    border-radius:5px 0 0 5px;
     transition: all 0.3s linear;
 }
-#prev svg,#next svg{
+/* #prev svg,#next svg{
     width:100%;
     fill: #fff;
-}
+} */
 #prev:hover,
 #next:hover{
     background-color:#E7D3DD;
