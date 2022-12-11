@@ -15,7 +15,7 @@ burgerBar.addEventListener("click", function () {
 let data = [
   {
     id: 1,
-    imageUrl: "images/image0 (1).jpg",
+    imageUrl: "images/s.jpg",
     title: "ატარე შენი თანამგზავრი",
   },
   {
