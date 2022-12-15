@@ -275,4 +275,4 @@ navLinks.forEach((e) => {
     })
 })
 
-// gallery section
+

@@ -643,6 +643,7 @@ a:hover::after {
 }
 #prev{
     left:0;
+    top:50%;
     border-radius: 0 5px 5px 0;
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
@@ -650,6 +651,7 @@ a:hover::after {
 }
 #next{
     right:0;
+    top:50%;
     border-radius:5px 0 0 5px;
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;

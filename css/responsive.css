@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media(max-width:1024px){
     .nav-li{
      font-size: 20px;
@@ -38,8 +45,11 @@
          margin-top: 20px;
      }
      #ul-list {
-         flex-wrap: wrap;
-         justify-content: center;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
      }
      .title{
          font-size: 15px;
@@ -54,9 +64,16 @@
         font-size: 50px;
     }
     .ul{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
  }   
 
@@ -75,7 +92,7 @@
          font-size: 20px;
      }
      .nav-li{
-         font-size: 15px;
+         font-size: 20px;
      }
      .footer-bg1{
          margin-right: 30px;
@@ -84,15 +101,19 @@
          margin-right: 50px;
      }
      .about-us-div{
-         flex-wrap: wrap;
-         justify-content: center;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
          padding-left: 10px;
          padding-right: 10px;
      }
      .about-us-img{
          width: 100%;
          margin-top: 50px;
-         object-fit: contain;
+         -o-object-fit: contain;
+            object-fit: contain;
      }
      .h2{
          position: absolute;
@@ -106,8 +127,11 @@
          top: 43%;
      }
      .contact-section-div{
-         flex-wrap: wrap;
-         justify-content:center;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
+         -webkit-box-pack:center;
+             -ms-flex-pack:center;
+                 justify-content:center;
          width: 100%;
      }
      .map{
@@ -118,8 +142,11 @@
          
      }
      .registration-form{
-         flex-wrap: wrap;
-         justify-content: center;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
          width: 80%;
      }
      .img-div{
@@ -132,8 +159,11 @@
          font-size: 20px;
      }
      #ul-list {
-         flex-wrap: wrap;
-         justify-content: center;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
          width: 100%;
      }
      #loadNext {
@@ -169,8 +199,11 @@
 
  @media(max-width:733px){
     .footer-bg{
-       flex-wrap: wrap;
-       justify-content: center;
+       -ms-flex-wrap: wrap;
+           flex-wrap: wrap;
+       -webkit-box-pack: center;
+           -ms-flex-pack: center;
+               justify-content: center;
     
     }
  }
@@ -182,8 +215,11 @@
         width: 400px;
     }
     .contact-div{
-        flex-wrap: wrap;
-        justify-content:center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
         width: 80%;
     }
     .slide-ana-div{
@@ -215,18 +251,23 @@
          margin-right: 20px;
      }
      .footer-bg{
-         flex-wrap: wrap;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
      }
      .about-us-div{
-         flex-wrap: wrap;
-         justify-content: center;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
          padding-left: 10px;
          padding-right: 10px;
      }
      .about-us-img{
          width: 100%;
          margin-top: 50px;
-         object-fit: contain;
+         -o-object-fit: contain;
+            object-fit: contain;
      }
      .h2{
          position: absolute;
@@ -240,8 +281,11 @@
          top: 38%;
      }
      .contact-section-div{
-         flex-wrap: wrap;
-         justify-content:center;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
+         -webkit-box-pack:center;
+             -ms-flex-pack:center;
+                 justify-content:center;
          width: 100%;
      }
      .map{
@@ -255,7 +299,7 @@
          font-size: 20px;
      }
      .input {
-         font-size: 12px;
+         font-size: 15px;
      }
      .send-button {
          font-size: 12px;
@@ -268,8 +312,11 @@
          width: 20px;
      }
      #ul-list {
-         flex-wrap: wrap;
-         justify-content: center;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
      }
      #loadNext {
          margin-left: 30px;
@@ -295,6 +342,13 @@
          height: 300px;
      }
      
+     #prev{
+        top: 40%;
+     }
+     #next{
+        top: 40%;
+     }
+   
      
  
  @media(max-width:320px){}
@@ -315,16 +369,22 @@
      
      }
      .nav-li{
-         font-size: 10px;
-         flex-direction: column;
+         font-size: 18px;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
      }
      .navigation{
          padding-left: 25px;
          padding-right: 25px;
      }
      .footer-bg{
-         flex-wrap: wrap;
-         justify-content: center;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
      }
      .footer-bg1{
          padding-left: 50px;
@@ -338,15 +398,19 @@
          font-size: 15px;
      }
      .about-us-div{
-         flex-wrap: wrap;
-         justify-content: center;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
          padding-left: 10px;
          padding-right: 10px;
      }
      .about-us-img{
          width: 100%;
          margin-top: 5px;
-         object-fit: contain;
+         -o-object-fit: contain;
+            object-fit: contain;
      }
      .h2{
          position: absolute;
@@ -368,19 +432,22 @@
          font-size: 25px;
      }
      .registration-form{
-         flex-wrap: wrap;
-         justify-content: center;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
          width: 80%;
      }
      .input {
          max-width: 400px;
          width: 100%;
-         height: 20px;
+         height: 30px;
      }
      .send-button {
          max-width: 400px;
          width: 100%;
-         height: 20px;
+         height: 30px;
      }
      .img-div{
          margin-top: 0px;
@@ -388,10 +455,10 @@
      
      }
      .form-heading{
-         font-size: 15px;
+         font-size: 20px;
      }
      .input-check{
-         font-size: 12px;
+         font-size: 15px;
      }
      .form{
          margin-left: 50px;
