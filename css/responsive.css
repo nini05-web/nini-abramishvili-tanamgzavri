@@ -343,10 +343,10 @@
      }
      
      #prev{
-        top: 40%;
+        top: 38%;
      }
      #next{
-        top: 40%;
+        top: 38%;
      }
    
      
@@ -466,7 +466,9 @@
          margin: 0 auto;
      }
      .image{
-         height: 340px;
+         height: 300px;
+         margin-bottom: 80px;
+         margin-top: 50px;
      }
      .slider-wrapper{
          margin: 0 auto;

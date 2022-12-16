@@ -15,12 +15,12 @@ burgerBar.addEventListener("click", function () {
 let data = [
   {
     id: 1,
-    imageUrl: "images/s.jpg",
+    imageUrl: "images/slide.jpg",
     title: "ატარე შენი თანამგზავრი",
   },
   {
     id: 2,
-    imageUrl: "images/slide.jpg",
+    imageUrl: "images/s.jpg",
     title: "მზადდება  სიყვარულით",
   },
   {
@@ -147,9 +147,10 @@ registrationForm.addEventListener("submit", function (event) {
 
   //username
   let usernameValue = document.getElementById("usernameField").value;
-  if (usernameValue == " ") {
+  if (usernameValue == "") {
     errors.username = "მომხმარებლის სახელის ფანჯარა არ უნდა იყოს ცარიელი";
   }
+  console.log(errors);
 
   //password
   let passwordValue = document.getElementById("passwordField").value;
