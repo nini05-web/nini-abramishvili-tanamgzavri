@@ -20,16 +20,11 @@ let data = [
   },
   {
     id: 2,
-    imageUrl: "images/s.jpg",
-    title: "მზადდება  სიყვარულით",
-  },
-  {
-    id: 3,
     imageUrl: "images/sl.jpg",
     title: "ატარე ქართული",
   },
   {
-    id: 4,
+    id: 3,
     imageUrl: "images/slider.jpg",
     title: "გახადეთ ჩვენი სამოსი, თქვენი მუდმივი თანამგზავრი",
   },
