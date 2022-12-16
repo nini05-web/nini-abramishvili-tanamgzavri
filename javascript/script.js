@@ -192,10 +192,6 @@ function emailValidation() {
   if (emailFiled.match(emailStructure)) {
       spanText.innerHTML ='Your Email is valid';
       spanText.style.color = 'green';
-  } else {
-      spanText.innerHTML = 'Your Email is invalid';
-      spanText.style.color = 'red'
-  }
 }
 
 
