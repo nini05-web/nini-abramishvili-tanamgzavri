@@ -192,6 +192,7 @@ function emailValidation() {
   if (emailFiled.match(emailStructure)) {
       spanText.innerHTML ='Your Email is valid';
       spanText.style.color = 'green';
+  }
 }
 
 
@@ -200,13 +201,10 @@ function emailValidation() {
 
 // scroll
 /*
-
     SMOOTH SCROLL VANILA JS
-
     1) https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
     2) https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect 	
     3) https://developer.mozilla.org/en-US/docs/Web/API/DOMHighResTimeStamp
-
 */
 
 
@@ -266,5 +264,3 @@ navLinks.forEach((e) => {
         requestAnimationFrame(scrollAnimation);
     })
 })
-
-
